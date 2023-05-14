@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Rafael Henriques</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Amd7s_cpUi6qbsRPX");
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="navbar">
+      <a class="home-link" href="">
+        <img id="logoImg" src="images/eu_website.svg" alt="" />
+      </a>
+      <ul id="navlinks">
+        <li id="homeLi" class="navlink">
+          <a class="navlink-a home-link" href="">HOME</a>
+          <div class="navlink-bg"></div>
+        </li>
+        <li id="aboutMeLi" class="navlink">
+          <a class="navlink-a" id="aboutMeLink" href="">ABOUT ME</a>
+          <div class="navlink-bg"></div>
+        </li>
+        <li id="webDevLi" class="navlink">
+          <a class="navlink-a" id="webDevLink" href="">WEB DEV</a>
+          <div class="navlink-bg"></div>
+        </li>
+        <li id="comicsLi" class="navlink">
+          <a class="navlink-a" id="comicsLink" href="">COMICS</a>
+          <div class="navlink-bg"></div>
+        </li>
+        <li id="contactsLi" class="navlink">
+          <a class="navlink-a" id="contactsLink" href="">CONTACTS</a>
+          <div class="navlink-bg"></div>
+        </li>
+        <li id="langLi" class="navlink">
+          <a class="navlink-a" id="langLink" href="pt.html">PT</a>
+          <div class="navlink-bg"></div>
+        </li>
+      </ul>
+      <img id="menuButton" src="images/iconmonstr-menu-alt-lined.svg" alt="" />
+      <img id="closeButton" src="images/iconmonstr-x-mark-lined.svg" alt="" />
+    </div>
+    <section class="slow-scroll-wrapper" id="slowWrapper">
+      <!---------- cursor style ---------->
+      <div id="mouseCircle">
+        <svg
+          id="cursorTextSvg"
+          xmlns="http://www.w3.org/2000/svg"
+          xml:lang="en"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 500 500"
+        >
+          <title>Circular Text Path</title>
+          <style>
+            text {
+              font-size: 72px;
+              font-family: "Millimetre-Regular", monospace;
+              font-weight: bold;
+              font-variant: small-caps;
+              font-variant-ligatures: none;
+              fill: #292a3d;
+            }
+          </style>
+          <defs>
+            <path
+              id="textcircle"
+              d="M250,400
+                 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+              transform="rotate(12,250,250)"
+            />
+          </defs>
+          <rect width="100%" height="100%" fill="none" />
+          <text>
+            <textPath
+              xlink:href="#textcircle"
+              aria-label="scroll down & get to know me!"
+              textLength="942"
+            >
+              scroll down & get to know me!&nbsp;
+            </textPath>
+          </text>
+        </svg>
+        <img id="cursorImgSvg" src="images/eu_website.svg" alt="" />
+      </div>
+
+      <div id="skillStrip">
+        <h2 id="skillsH2">SKI<br />LLS</h2>
+        <div class="carousel-slider">
+          <ul class="carousel-list">
+            <li>
+              HTML
+              <img class="skill-Img" src="images/skill_9.svg" alt="" />
+            </li>
+            <li>
+              CSS
+              <img class="skill-Img" src="images/skill_8.svg" alt="" />
+            </li>
+            <li>
+              Java_<br />script
+              <img class="skill-Img" src="images/skill_6.svg" alt="" />
+            </li>
+            <li>
+              Python
+              <img class="skill-Img" src="images/skill_7.svg" alt="" />
+            </li>
+            <li>
+              Java
+              <img class="skill-Img" src="images/skill_4.svg" alt="" />
+            </li>
+            <li>C <img class="skill-Img" src="images/skill_6.svg" alt="" /></li>
+            <li>
+              Photo_<br />shop
+              <img class="skill-Img" src="images/skill_7.svg" alt="" />
+            </li>
+            <li>
+              Illus_<br />trator
+              <img class="skill-Img" src="images/skill_6.svg" alt="" />
+            </li>
+            <li>
+              Figma
+              <img class="skill-Img" src="images/skill_7.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="yellowStripDiv">
+        <p>
+          * This website is under construction, and may not be well optimized
+          for some specific older devices yet. Also, I will keep adding new
+          projects as I finish them.<br />Feel free to contact me if you find
+          any bugs or things I should improve! *
+        </p>
+        <img id="yellowStrip" src="images/yellow_strip.png" alt="" />
+      </div>
+
+      <div id="mainBody">
+        <h1 id="myNameH2">rafael<br />henriques</h1>
+
+        <div id="aboutMeDiv">
+          <div id="leftTitleContainer">
+            <h2 class="navlink-H2">About Me</h2>
+            <img
+              class="title-underline"
+              src="images/title_underline_left.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="text-row">
+            <p>
+              Hello, my name is Rafael.<br /><br />I like to think I'm quite a
+              creative guy when it comes to mixing arts and technology.
+              Currently studying Computer Science at Técnico in Lisbon, one of
+              my goals is to enter the world of Web Development. Although I'm
+              still a rookie, I enjoy making intuitive and asthetically pleasing
+              stuff.<br /><br />
+              I hope you like my portfolio!
+            </p>
+            <div id="aboutMeImgContainer">
+              <img id="aboutMePh" src="images/about_ph.jpg" alt="" />
+              <img
+                id="aboutMeImgCorners"
+                src="images/img_cornerlines.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div id="webDevDiv">
+          <div id="rightTitleContainer">
+            <h2 class="navlink-H2">Web Dev</h2>
+            <img
+              class="title-underline"
+              src="images/title_underline_left.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="text-row">
+            <a
+              href="https://flovers.pt/en.html#homeSection"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="webDevPh1"
+                src="images/logo-simbolo-amarelo.svg"
+                alt=""
+              />
+            </a>
+
+            <img id="webDevRoundline" src="images/logo_roundline.svg" alt="" />
+            <p>
+              In 2022 I started working as a Freelancer on my first professional
+              web dev project.<br /><br />
+              I designed and developed the website for the portuguese food brand
+              Flovers. From the prototyping phase in Figma to the deployment on
+              the host domain, my work included coding (html, css and
+              javascript), graphic design, illustration and other related
+              services. <br /><br />
+              Despite the huge responsibility of taking on a project like this
+              one alone, it was an awesome experience that ignited my passion
+              for design and web development.
+            </p>
+          </div>
+          <p class="hover-text">Hover/tap these! ▼</p>
+          <div id="webDevImgRow1" class="images-row">
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/dropdown_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  UX/UI <br />
+                  Navigation <br />
+                  Design
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/mosaic_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Drawing <br />
+                  & <br />
+                  Illustration
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/product_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Product Design<br />
+                  & <br />
+                  Responsive<br />
+                  Animations
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/lettering_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Lettering<br />
+                  Design
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="webDevImgRow2" class="images-row">
+            <div style="display: none" class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/product_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Product Design<br />
+                  & <br />
+                  Responsive<br />
+                  Animations
+                </p>
+              </div>
+            </div>
+            <div style="display: none" class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/lettering_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Lettering<br />
+                  Design
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/icons_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Custom Icon<br />
+                  Design
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/contact_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Embedded<br />
+                  Back-end <br />
+                  Functionalities
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/mobile_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Mobile <br />
+                  Responsiveness
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/maps_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Google <br />
+                  Services
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="display: none" id="webDevImgRow3" class="images-row">
+            <div style="display: none" class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/icons_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Custom Icon<br />
+                  Design
+                </p>
+              </div>
+            </div>
+            <div style="display: none" class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/contact_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Embedded<br />
+                  Back-end <br />
+                  Functionalities
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/mobile_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Mobile <br />
+                  Responsiveness
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/maps_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Google <br />
+                  Services
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="display: none" id="webDevImgRow4" class="images-row">
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/mobile_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Mobile <br />
+                  Responsiveness
+                </p>
+              </div>
+            </div>
+            <div class="img-square">
+              <img
+                class="square-outline"
+                src="images/square_outline.svg"
+                alt=""
+              />
+              <img
+                class="flovers-screenshot"
+                src="images/maps_print.png"
+                alt=""
+              />
+              <div class="img-caption">
+                <p>
+                  Google <br />
+                  Services
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="comicsDiv">
+          <div id="leftTitleContainer">
+            <h2 class="navlink-H2">Comics</h2>
+            <img
+              class="title-underline"
+              src="images/title_underline_left.svg"
+              alt=""
+            />
+          </div>
+          <div id="booksRow1" class="books-row">
+            <img
+              id="firstStrip"
+              class="torn-strip"
+              src="images/historias torn strip.png"
+              alt=""
+            />
+            <p>
+              Drawing has been a passion of mine since I was a little kid.
+              <br />
+              That passion grew into Manga, Comics and a dream of becoming a
+              published author. So at 16 years old I had the amazing oportunity
+              of participating in a collection of comics released by the
+              publisher Escorpião Azul, titled "Stories from Another World".
+              <br />
+              My work here is a science fiction piece called "Second Chance".
+            </p>
+            <div class="book-div">
+              <img
+                id="firstArrow"
+                class="book-arrow book-arrow-right"
+                src="images/book_arrow_right.svg"
+                alt=""
+              />
+              <img
+                class="book-img"
+                src="images/historias doutro mundo mockup.png"
+                alt=""
+              />
+              <img
+                id="firstBookOutline"
+                class="book-outline"
+                src="images/book_outline.svg"
+                alt=""
+              />
+              <p class="hover-text">▲ Hover/tap these!</p>
+            </div>
+          </div>
+          <div id="booksRow2" class="books-row">
+            <img
+              id="secondStrip"
+              class="torn-strip"
+              src="images/inocencia torn strip.png"
+              alt=""
+            />
+            <div class="book-div">
+              <img
+                id="secondArrow"
+                class="book-arrow book-arrow-left"
+                src="images/book_arrow_left.svg"
+                alt=""
+              />
+              <img
+                class="book-img"
+                src="images/inocencia perversa mockup.png"
+                alt=""
+              />
+              <img
+                id="secondBookOutline"
+                class="book-outline"
+                src="images/book_outline.svg"
+                alt=""
+              />
+            </div>
+            <p>
+              Also back in 2016, I had my first solo book published - "Perverted
+              Innocence". <br />
+              It is a collection of stories mostly in line with the same Sci-Fi
+              theme that characterizes my works. From apocalyptic world ending
+              plots to psychological drama, I like to take the characters to the
+              limit, with some crazy drawings to portray their far-fetched
+              journeys. <br />
+              The book also features my 4-page comic "Rock Paper Scissors: The
+              Duel", which won a contest at Iberanime Lx2015.
+            </p>
+          </div>
+          <div id="booksRow3" class="books-row">
+            <img
+              id="thirdStrip"
+              class="torn-strip"
+              src="images/humanus torn strip.png"
+              alt=""
+            />
+            <p>
+              Two years later, I was invited to enter a new collection -
+              "Humanus" - with more amazing artists, some of which had also
+              participated in the first collective book. <br />
+              This time I did a small piece related to a theme of romance and
+              drama. <br />
+              During these years I had an incredible experience and for that I
+              have to thank my editors Jorge and Sharon for believing in my
+              potential and opening the doors to these great opportunities.
+            </p>
+            <div class="book-div">
+              <img
+                id="thirdArrow"
+                class="book-arrow book-arrow-right"
+                src="images/book_arrow_right.svg"
+                alt=""
+              />
+              <img class="book-img" src="images/humanus mockup.png" alt="" />
+              <img
+                id="thirdBookOutline"
+                class="book-outline"
+                src="images/book_outline.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="contactsDiv">
+          <div id="rightTitleContainer">
+            <h2 class="navlink-H2">Contacts</h2>
+            <img
+              class="title-underline"
+              src="images/title_underline_left.svg"
+              alt=""
+            />
+          </div>
+          <div class="contacts-row">
+            <form
+              onsubmit="return false;"
+              action=""
+              method=""
+              class="contact-form"
+            >
+              <div class="contact-form-field">
+                <label for="name">Name: </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Dwight Schrute"
+                  required
+                />
+              </div>
+              <div class="contact-form-field">
+                <label for="email">Email: </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="beetfarmer@dundermifflin.com"
+                  required
+                />
+              </div>
+              <div class="contact-form-field">
+                <label for="message">Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="4"
+                  placeholder="Identity theft is not a joke! Millions of families suffer every year!"
+                ></textarea>
+              </div>
+              <div>
+                <input
+                  id="submitButton"
+                  type="submit"
+                  value="send"
+                  onclick="sendMail(); this.value='...'; setTimeout(() => {this.value='send'},'5000')"
+                />
+              </div>
+            </form>
+            <div id="thankyouNote">
+              <p>
+                Thanks for the message! <br />
+                <br />
+                If it's the case for that I will make sure to contact you as
+                soon as possible.
+              </p>
+            </div>
+            <div class="contact-info">
+              <p>
+                You made it to the end of website :') <br />
+                If you'd like to reach out please send me a message using the
+                form, or visit the links below!
+              </p>
+              <span id="infoLinks">
+                <a href="mailto:rafael.henriques99@gmail.com">
+                  <img
+                    class="info-img"
+                    src="images/iconmonstr-email-3.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/rafael-henriques-3521b3162 "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="info-img"
+                    src="images/iconmonstr-linkedin-2.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://github.com/rafael-sh16"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="info-img"
+                    src="images/iconmonstr-github-1.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="http://discordapp.com/users/leaft#0024"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="info-img"
+                    src="images/iconmonstr-discord-1.svg"
+                    alt=""
+                  />
+                </a>
+              </span>
+            </div>
+          </div>
+          <footer>&copy;2023 Rafael Henriques. All rights reserved.</footer>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+
+    <script type="module" src="threeScripts.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
