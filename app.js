@@ -837,4 +837,8 @@ function sendMail() {
     .catch((err)=> console.log(err));
 }
 
-
+window.opera.addEventListener("AfterScript", function(e) {
+  if (typeof jQuery != "undefined" && jQuery.prototype.lazyload) {
+    jQuery.prototype.lazyload = function() {};
+  }
+}, false);
