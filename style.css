@@ -26,7 +26,7 @@ html {
 
 body {
     background-color: var(--primary-color) !important;
-    height: 6540px;
+    height: 6640px;
     overflow: hidden;
     width: 100%;
     transition: background-color ease-in-out 1s;
@@ -716,6 +716,38 @@ input:-webkit-autofill:active {
     height: 42px;
 }
 
+#cvSpan {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#cvSpan p {
+    font-family: 'Sligoil', sans-serif;
+    font-size: 18px;
+    color: var(--accent-color);
+    position: absolute;
+    width: 530px;
+    padding-right: 380px;
+    text-align: right;
+}
+
+#cvRoundline {
+    width: 180px;
+    position: absolute;
+    transform: translateY(-30px);
+    filter: invert(79%) sepia(41%) saturate(480%) hue-rotate(15deg) brightness(109%) contrast(102%);
+}
+
+#cvImg {
+    width: 72px;
+    filter: invert(97%) sepia(7%) saturate(640%) hue-rotate(71deg) brightness(90%) contrast(88%);
+}
+
+#cvImg:hover {
+    filter: invert(79%) sepia(41%) saturate(480%) hue-rotate(15deg) brightness(109%) contrast(102%);
+}
+
 footer {
     display: absolute;
     color: white;
@@ -723,7 +755,7 @@ footer {
     font-size: 14px;
     color: var(--primary-color);
     text-align: center;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 /*########## SCROLLBAR ##########*/
@@ -1103,9 +1135,23 @@ textarea::-webkit-scrollbar-track {
         height: 38px;
     }
 
+    #cvSpan p {
+        font-size: 16px;
+        width: 500px;
+        padding-right: 370px;
+    }
+
+    #cvRoundline {
+        width: 160px;
+        transform: translateY(-28px);
+    }
+    
+    #cvImg {
+        width: 64px;
+    }
+
     footer {
         font-size: 14px;
-        margin-top: 60px;
     }
 }
 
@@ -1252,7 +1298,7 @@ textarea::-webkit-scrollbar-track {
     }
 
     body {
-        height: 6400px;
+        height: 6500px;
     }
 
     #navbar {
@@ -1568,9 +1614,24 @@ textarea::-webkit-scrollbar-track {
         height: 30px;
     }
 
+    #cvSpan p {
+        font-size: 14px;
+        width: 420px;
+        padding-right: 320px;
+    }
+
+    #cvRoundline {
+        width: 140px;
+        transform: translateY(-24px);
+    }
+    
+    #cvImg {
+        width: 56px;
+    }
+    
     footer {
         font-size: 12px;
-        margin-top: 60px;
+        margin-top: 110px;
     }
 }
 
@@ -1600,7 +1661,7 @@ textarea::-webkit-scrollbar-track {
     }
 
     body {
-        height: 6450px;
+        height: 6700px;
     }
 
     #myNameH2 {
@@ -1869,6 +1930,14 @@ textarea::-webkit-scrollbar-track {
         transform: translate(286px, -314px);
         width: 72px;
     }
+   
+    #cvSpan {
+        margin-top: 100px;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -1897,7 +1966,7 @@ textarea::-webkit-scrollbar-track {
     }
 
     body {
-        height: 6600px;
+        height: 6800px;
     }
 
     #myNameH2 {
@@ -2192,6 +2261,12 @@ textarea::-webkit-scrollbar-track {
         margin-top: 0px;
     }
 
+    #cvSpan p {
+        font-size: 12px;
+        width: 380px;
+        padding-right: 280px;
+    }
+
     footer {
         margin-top: 90px;
     }
@@ -2204,7 +2279,7 @@ textarea::-webkit-scrollbar-track {
     }
 
     body {
-        height: 6750px;
+        height: 6900px;
     }
 
     #myNameH2 {
@@ -2380,6 +2455,12 @@ textarea::-webkit-scrollbar-track {
     #contactsDiv {
         height: 800px;
         margin-top: 80px;
+    }
+
+    #cvSpan p {
+        font-size: 12px;
+        width: 360px;
+        padding-right: 260px;
     }
 
     footer {

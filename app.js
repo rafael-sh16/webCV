@@ -522,7 +522,7 @@ comicsLink.addEventListener('click', function (e) {
 
 contactsLink.addEventListener('click', function (e) {
     e.preventDefault();
-    window.scrollTo(0, 5800);
+    window.scrollTo(0, 5600);
 })
 
 // const parentDiv = document.querySelector("#slowWrapper");
