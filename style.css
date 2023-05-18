@@ -774,11 +774,12 @@ textarea::-webkit-scrollbar-track {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--accent-color);
+    background: var(--primary-color);
     background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
     background-clip: padding-box;
 }
 
