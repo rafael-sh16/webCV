@@ -52,7 +52,7 @@ loader.load('./models/computer.glb', function ( gltf ) {
     scene.add(objects[1])
 }, undefined, function ( error ) { console.error( error )});
 
-loader.load('./models/spaceship2.glb', function ( gltf ) {
+loader.load('./models/spaceship.glb', function ( gltf ) {
     objects[2] = gltf.scene;
     objects[2].position.set(0,-10,0);
     objects[2].scale.set(0.9,0.9,0.9);
