@@ -35,7 +35,7 @@ camera.position.z = 8;
 
 var objects = [];
 const loader = new GLTFLoader();
-loader.load('../models/lego.glb', function ( gltf ) {
+loader.load('./models/lego.glb', function ( gltf ) {
     objects[0] = gltf.scene;
     objects[0].position.set( -1, -10, 0 );
     objects[0].scale.set(1.4, 1.4, 1.4);
@@ -44,7 +44,7 @@ loader.load('../models/lego.glb', function ( gltf ) {
     scene.add(objects[0])
 }, undefined, function ( error ) { console.error( error )});
 
-loader.load('../models/computer.glb', function ( gltf ) {
+loader.load('./models/computer.glb', function ( gltf ) {
     objects[1] = gltf.scene;
     objects[1].position.set(1,-10,0);
     objects[1].scale.set(1,1,1);
@@ -52,7 +52,7 @@ loader.load('../models/computer.glb', function ( gltf ) {
     scene.add(objects[1])
 }, undefined, function ( error ) { console.error( error )});
 
-loader.load('../models/spaceship.glb', function ( gltf ) {
+loader.load('./models/spaceship.glb', function ( gltf ) {
     objects[2] = gltf.scene;
     objects[2].position.set(0,-10,0);
     objects[2].scale.set(0.9,0.9,0.9);
@@ -60,7 +60,7 @@ loader.load('../models/spaceship.glb', function ( gltf ) {
     scene.add(objects[2])
 }, undefined, function ( error ) { console.error( error )});
 
-loader.load('../models/brick_phone.glb', function ( gltf ) {
+loader.load('./models/brick_phone.glb', function ( gltf ) {
     objects[3] = gltf.scene;
     objects[3].position.set(0,-10,0);
     objects[3].scale.set(1.45,1.45,1.45);
